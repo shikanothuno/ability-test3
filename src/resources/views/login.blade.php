@@ -16,4 +16,5 @@
             <dd><input type="text" name="password" placeholder="例：coachtech1106"></dd>
         </dl>
     </div>
+    <button>ログイン</button>
 </form>
