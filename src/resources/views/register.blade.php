@@ -1,0 +1,21 @@
+@extends('layouts.app')
+
+@section('css')
+<link rel="stylesheet" href="{{asset("css/register.css")}}">
+@endsection
+
+@section('content')
+<h2 class="title">Register</h2>
+<form class="register__form" action="/register" method="POST">
+    @csrf
+    <div class="form__div">
+        <dl>
+            <dt class="name__dt">お名前</dt>
+            <dd><input type="text" name="name" placeholder="例：山田　太郎"></dd>
+            <dt class="email__dt">メールアドレス</dt>
+            <dd><input type="text" name="email" placeholder="例：test@example.com"></dd>
+            <dt class="password">パスワード</dt>
+            <dd><input type="text" name="password" placeholder="例：coachtech1106"></dd>
+        </dl>
+    </div>
+</form>
