@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class Contact extends Model
 {
@@ -20,4 +21,10 @@ class Contact extends Model
         "building",
         "detail",
     ];
+
+    public function getCategory($id)
+    {
+        $category = DB::table("categories")->find($id);
+        return $category;
+    }
 }

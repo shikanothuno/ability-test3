@@ -6,7 +6,7 @@
 
 @section('content')
 <h2 class="title">Contact</h2>
-<form class="contact__form" action="confirm.blade.php" method="POST">
+<form class="contact__form" action="/confirm" method="POST">
     @csrf
     <div class="form__div">
         <dl>
@@ -47,9 +47,10 @@
             <dt class="">お問い合わせの種類</dt>
             <dd>
                 <select name="" id="">
-                    <option value="">選択してください</option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="" selected>選択してください</option>
+                    @foreach ($categories as $category)
+                        <option value="">{{$category->content}}</option>
+                    @endforeach
                 </select>
             </dd>
             <dt class="">お問い合わせ内容</dt>

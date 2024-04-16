@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ConfirmController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get("/",[ConfirmController::class,"index"]);
+Route::post("/confirm",[ConfirmController::class,"confirm"]);
+Route::get("/admin",[ConfirmController::class,"admin"]);
+Route::post("/thanks",[ConfirmController::class,"thanks"]);
+Route::post("/login",[LoginController::class,"login"]);
+Route::post("/register",[RegisterController::class,"register"]);
