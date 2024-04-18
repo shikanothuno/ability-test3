@@ -19,6 +19,6 @@ use Illuminate\Support\Facades\Route;
 Route::get("/",[ConfirmController::class,"index"]);
 Route::post("/confirm",[ConfirmController::class,"confirm"]);
 Route::get("/admin",[ConfirmController::class,"admin"]);
-Route::post("/thanks",[ConfirmController::class,"thanks"]);
+Route::get("/thanks",[ConfirmController::class,"thanks"]);
 Route::post("/login",[LoginController::class,"login"]);
 Route::post("/register",[RegisterController::class,"register"]);

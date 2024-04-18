@@ -6,7 +6,7 @@
 
 @section('content')
 <h2 class="title">Confirm</h2>
-<form action="/thanks">
+<form action="/thanks" method="POST">
     @csrf
     <table>
         <tr>
