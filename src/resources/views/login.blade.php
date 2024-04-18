@@ -8,6 +8,9 @@
 <h2 class="title">Register</h2>
 <form class="register__form" action="/login" method="POST">
     @csrf
+    @foreach ($errors->all() as $error)
+        <li>{{$error}}</li>
+    @endforeach
     <div class="form__div">
         <dl>
             <dt class="email__dt">メールアドレス</dt>
