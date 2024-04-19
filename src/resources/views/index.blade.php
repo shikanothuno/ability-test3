@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+<p class="title__header">FashionablyLate</p>
 <h2 class="title">Contact</h2>
 <form class="contact__form" action="/confirm" method="POST">
     @csrf

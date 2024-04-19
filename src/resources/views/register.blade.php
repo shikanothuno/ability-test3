@@ -3,9 +3,11 @@
 @section('css')
 <link rel="stylesheet" href="{{asset("css/register.css")}}">
 @endsection
-
+<header>
+    <p class="title__header">FashionablyLate</p>
+</header>
 @section('content')
-<h2 class="title">Register</h2>
+<p class="title">Register</p>
 <form class="register__form" action="/register" method="POST">
     @csrf
     @foreach ($errors->all() as $error)

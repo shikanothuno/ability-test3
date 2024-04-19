@@ -27,4 +27,9 @@ class Contact extends Model
         $category = DB::table("categories")->find($id);
         return $category;
     }
+
+    public function category()
+    {
+        return $this->hasOne("App\Model\Category");
+    }
 }

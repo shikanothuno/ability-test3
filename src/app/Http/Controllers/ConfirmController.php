@@ -34,12 +34,26 @@ class ConfirmController extends Controller
             "building" => $request->building,
             "category_id" => $request->category_id,
             "content" => $request->content,
+            "first_name" => $request->first_name,
+            "last_name" => $request->last_name,
+            "detail" => $request->content,
         ];
         return view("confirm",compact("data","categories"));
     }
 
-    public function thanks()
+    public function thanks(Request $request)
     {
+        Contact::create([
+            $request->category_id,
+            $request->first_name,
+            $request->last_name,
+            $request->gender,
+            $request->email,
+            $request->tell,
+            $request->adress,
+            $request->building,
+            $request->detail
+        ]);
         return view("thanks");
     }
 }

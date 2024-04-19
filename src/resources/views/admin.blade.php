@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+<p class="title__header">FashionablyLate</p>
 <h2 class="title">Admin</h2>
 <form class="admin__form" action="/admin">
     <div class="search__div">
