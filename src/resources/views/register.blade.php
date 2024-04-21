@@ -19,9 +19,9 @@
             <dd><input type="text" name="name" placeholder="例：山田　太郎" value="{{old("name")}}"></dd>
             <dt class="email__dt">メールアドレス</dt>
             <dd><input type="text" name="email" placeholder="例：test@example.com" value="{{old("email")}}"></dd>
-            <dt class="password">パスワード</dt>
+            <dt class="password__dt">パスワード</dt>
             <dd><input type="text" name="password" placeholder="例：coachtech1106"></dd>
         </dl>
     </div>
-    <button>登録</button>
+    <button class="register__button">登録</button>
 </form>

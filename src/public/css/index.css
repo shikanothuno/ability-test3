@@ -1,0 +1,78 @@
+.title {
+    color: #8B7969;
+    font-family: "Inika";
+    font-size: 35px;
+    text-align: center;
+}
+
+dt {
+    font-size: 20px;
+}
+
+.red {
+    color: red;
+}
+
+input {
+    background-color: #F4F4F4;
+    border: none;
+}
+
+.radio-button {
+    accent-color: #8B7969;
+    inline-size: 18px;
+}
+
+.name__input {
+    height: 38px;
+    width: 288px;
+}
+
+.last-name__input {
+    margin-left: 40px;
+}
+
+.email__input {
+    height: 38px;
+    width: 620px;
+}
+
+.tel__input {
+    height: 38px;
+    width: 178px;
+}
+
+.tel__div {
+    display: flex;
+    height: 38px;
+}
+
+.tel-child__div {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.address__input {
+    height: 38px;
+    width: 620px;
+}
+
+.building__input {
+    height: 38px;
+    width: 620px;
+}
+
+select {
+    background-color: #F4F4F4;
+    border: none;
+    height: 38px;
+    width: 332px;
+}
+
+textarea {
+    background-color: #F4F4F4;
+    border: none;
+    height: 129px;
+    resize: none;
+    width: 620px;
+}

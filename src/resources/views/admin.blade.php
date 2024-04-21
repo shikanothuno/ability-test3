@@ -6,7 +6,7 @@
 
 @section('content')
 <p class="title__header">FashionablyLate</p>
-<h2 class="title">Admin</h2>
+<p class="title">Admin</p>
 <form class="admin__form" action="/admin">
     <div class="search__div">
         <input class="search__input" type="text" placeholder="名前やメールアドレスを入力してください">

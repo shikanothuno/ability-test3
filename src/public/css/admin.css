@@ -1,0 +1,40 @@
+.title {
+    color: #8B7969;
+    font-family: "Inika";
+    font-size: 35px;
+    text-align: center;
+}
+
+
+input {
+    background-color: #F4F4F4;
+    border: none;
+}
+
+select {
+    background-color: #F4F4F4;
+    border: none;
+}
+
+.search__input {
+    height: 50px;
+    width: 348px;
+}
+
+.gender__select {
+    font-size: 17px;
+    height: 50px;
+    width: 102px;
+}
+
+.category__select {
+    font-size: 17px;
+    height: 50px;
+    width: 223px;
+}
+
+.date__input {
+    font-size: 17px;
+    height: 50px;
+    width: 149px;
+}

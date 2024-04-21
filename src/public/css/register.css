@@ -15,6 +15,7 @@ body {
 
 .register__form {
     background-color: white;
+    border-radius: 10px;
     height: 579px;
     text-align: center;
     width: 736px;
