@@ -10,19 +10,19 @@
 <form class="admin__form" action="/admin">
     <div class="search__div">
         <input class="search__input" type="text" placeholder="名前やメールアドレスを入力してください">
-        <select name="gender" >
+        <select class="gender__select" name="gender" >
             <option value="" selected>性別</option>
             <option value="man">男性</option>
             <option value="woman">女性</option>
             <option value="othor">その他</option>
         </select>
-        <select name="category" >
+        <select class="category__select" name="category" >
             <option value="" selected>お問い合わせの種類</option>
             @foreach ($categories as $category)
                 <option value="">{{$category->content}}</option>
             @endforeach
         </select>
-        <input type="date">
+        <input class="date__input" type="date">
         <button class="search__button">検索</button>
         <button class="reset__button">リセット</button>
     </div>

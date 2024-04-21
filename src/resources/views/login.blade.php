@@ -5,6 +5,7 @@
 @endsection
 <header>
     <p class="title__header">FashionablyLate</p>
+    <a class="register__button" href="/register">register</a>
 </header>
 @section('content')
 

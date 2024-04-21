@@ -2,6 +2,16 @@ header {
     background-color: white;
 }
 
+.header__div {
+    display: flex;
+}
+
+.login__button {
+    background-color: #D9C6B5;
+    height: 34px;
+    width: 100px;
+}
+
 .title {
     color: #8B7969;
     font-family: "Inika";
